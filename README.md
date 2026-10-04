@@ -12,10 +12,12 @@ sudo waydroid init -f \
 Requires waydroid 1.6.3 or newer with libgbinder 1.1.45 or newer on the host
 (Android 16 needs the aidl6 service manager protocol).
 
+For the Android TV images use the `16.2-tv` channels (VANILLA only).
+
 | Channel | Path |
 |---|---|
-| system | `16.2/system/lineage/<device>/<VANILLA\|GAPPS>.json` |
-| vendor | `16.2/vendor/<device>/MAINLINE.json` |
+| system | `<channel>/system/lineage/waydroid_<arch>/<VANILLA\|GAPPS>.json` |
+| vendor | `<channel>/vendor/waydroid_<arch>/MAINLINE.json` |
 
 The JSON files are updated by the build pipeline
 ([WitAqua-WayDroid/build-config](https://github.com/WitAqua-WayDroid/build-config)).
